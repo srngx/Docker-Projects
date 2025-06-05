@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Static Java Web App</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif; /* Using Inter font */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #e0f2f7; /* Light blue background */
+            color: #263238; /* Darker text */
+            text-align: center;
+        }
+        .card {
+            background-color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Soft shadow */
+            max-width: 600px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 1.5s ease-out; /* Fade-in animation */
+        }
+        h1 {
+            color: #007bff; /* Vibrant blue heading */
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            background-color: #28a745; /* Green button */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 10px; /* Rounded button corners */
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .button:hover {
+            background-color: #218838;
+            transform: translateY(-2px); /* Slight lift on hover */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .card {
+                padding: 25px 20px;
+                width: 95%;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+
+        /* Keyframe for fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Welcome to My Java Static Web App!</h1>
+        <p>This page is served by a lightweight Spring Boot application.</p>
+        <p>It demonstrates how a simple Java app can host static HTML content using Maven.</p>
+        <a href="#" class="button">Learn More</a>
+    </div>
+</body>
+</html>

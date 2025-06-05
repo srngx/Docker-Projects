@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  static-webapp:
+    image: maven:3-openjdk-17
+    container_name: static-webapp
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+      - ~/.m2:/root/.m2
+    ports:
+      - "8080:8080"
+    command: mvn spring-boot:run

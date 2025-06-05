@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Web App - About</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>StaticApp</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about" class="active">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="content">
+            <div class="container">
+                <h1>About Us</h1>
+                <p>This is a demonstration of a simple Java-based web application that serves static content.</p>
+                
+                <h2>Technology Stack</h2>
+                <ul>
+                    <li><strong>Java 17:</strong> The programming language</li>
+                    <li><strong>Spring Boot:</strong> Web framework</li>
+                    <li><strong>Maven:</strong> Build tool and dependency management</li>
+                    <li><strong>Thymeleaf:</strong> Template engine</li>
+                </ul>
+                
+                <h2>Project Structure</h2>
+                <p>The application follows standard Maven directory structure with static resources in the appropriate directories.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 StaticApp. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script th:src="@{/js/script.js}"></script>
+</body>
+</html>
