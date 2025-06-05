@@ -15,7 +15,6 @@ This is a simple Java web application using Maven that serves static content
 
 ## Compile it using maven docker container
 ```bash
-
 docker run --rm -v "$(pwd)":/usr/src/app -v ~/.m2:/root/.m2 -w /usr/src/app -p 8080:8080 maven:3-openjdk-17 bash -c "mvn clean compile && mvn spring-boot:run"
 ```
 
@@ -34,16 +33,15 @@ docker run --rm -v "$(pwd)":/usr/src/app -v ~/.m2:/root/.m2 -w /usr/src/app -p 8
 
 ```bash
 docker build . -t springbootapp
-
 ```
+
 ### Run Docker Image
 ```bash
 docker run -dp 8080:8080 springbootapp:latest
 ```
-```
-```
 
 ### Run Using Docker Compose
+
 ```bash
 # Start the application
 docker-compose up
@@ -51,7 +49,7 @@ docker-compose up
 # Stop the application
 docker-compose down
 ```
-```
+
 
 
 
